@@ -49,7 +49,7 @@ If you do not understand the difference between a histogram and a barplot, resea
 hist(stepstotalbydate$steps, main="Distribution of steps per day", xlab="Steps per day")
 ```
 
-![](Peer_assignment_1_files/figure-html/unnamed-chunk-4-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
 
 Calculate and report the mean and median of the total number of steps taken per day
 
@@ -83,7 +83,7 @@ plot(stepsmeanbyinterval$interval, stepsmeanbyinterval$steps,
      xlab="Interval", ylab="Number of steps")
 ```
 
-![](Peer_assignment_1_files/figure-html/unnamed-chunk-6-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-6-1.png) 
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -168,7 +168,7 @@ newstepstotalbydate <- aggregate(steps ~ date, data=newactivity, sum, na.rm = TR
 hist(newstepstotalbydate$steps, main="Distribution of steps per day", xlab="Steps per day")
 ```
 
-![](Peer_assignment_1_files/figure-html/unnamed-chunk-11-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-11-1.png) 
 
 ```r
 newmean_steps_per_day <- mean(newstepstotalbydate$steps, na.rm=TRUE)
@@ -241,4 +241,4 @@ xyplot(steps ~ interval | type_of_day, stepsmeanbydaytype, type="l", layout=c(1,
        xlab="Interval", ylab="Number of steps")
 ```
 
-![](Peer_assignment_1_files/figure-html/unnamed-chunk-13-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-13-1.png) 
